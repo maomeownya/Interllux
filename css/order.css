@@ -1,0 +1,57 @@
+/* Profile container background */
+.profile-container {
+  background: url("../../assets/image/shopping-bag-cart.jpg") no-repeat center;
+  background-size: cover;
+}
+
+/* Button styles */
+.tracker-btn {
+  background-color: transparent;
+  border: 1px solid #ddd;
+  color: #333;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  position: relative;
+  transition: transform 0.4s ease-in-out, background-color 0.3s ease-in-out,
+    border-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Added color transition */
+}
+
+/* Hover effect to scale button */
+.tracker-btn:hover {
+  transform: scale(1.07); /* Slightly enlarges the button */
+  background-color: #f8f9fa; /* Light background on hover */
+  color: #000; /* Changes text color to black */
+}
+
+.tracker-btn i {
+  font-size: 2rem;
+  transition: transform 0.3s ease-in-out; /* Smooth transition for icon on hover */
+}
+
+/* Increase icon size slightly on hover */
+.tracker-btn:hover i {
+  transform: scale(2); /* Slightly enlarges the icon */
+}
+
+.tracker-btn p {
+  font-size: 0.9rem;
+  transition: color 1s ease-in-out; /* Smooth transition for text color */
+}
+
+/* Cancelled Order and Refunded Orders button styles This is a property of PLSP-CCST BSIT-3B SY 2024-2025 */
+
+.tracker-btn .badge {
+  top: 5px;
+  right: 10px;
+  transition: background-color 0.3s ease-in-out; /* Smooth transition for badge color */
+}
+
+hr {
+  width: 100%;
+  margin: 0; /* Optional: Adjust as needed */
+}
+
+.tracker-btn a p {
+  color: #000 !important;
+}

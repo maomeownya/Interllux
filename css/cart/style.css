@@ -1,0 +1,319 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Responsive Product Container Layout */
+.product-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 8rem 1rem;
+    min-height: 80vh;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1200px;
+}
+
+/* Product Image Styling */
+.product-image img {
+    width: 100%;
+    max-width: 80%;
+    border-radius: 0px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+.thumbnail-container {
+    display: flex;
+    justify-content: center; /* Centers thumbnails under the main image */
+    gap: 0.5rem; /* Small gap between thumbnails */
+    margin-top: 1rem;
+    max-width: 100px;
+    margin-left: 310px;
+}
+
+.thumbnail {
+    width: 70px; /* Set a small width for the thumbnails */
+    height: 70px; /* Same as width to make it square */
+    object-fit: contain; /* Ensures the full image fits within the square */
+    cursor: pointer;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s;
+    border-radius: 4px;
+    background-color: #ffffff; /* Adds background for transparent areas */
+}
+
+.thumbnail:hover {
+    border-color: #888; /* Hover effect */
+}
+
+
+/* Product Details */
+.product-info {
+    margin-left: 2rem;
+    flex: 1;
+}
+
+.brand-name {
+    font-size: 1rem;
+    font-weight: normal;
+    letter-spacing: 0.125rem;
+}
+
+.product-name {
+    font-size: 1rem;
+    line-height: 1.2;
+    margin: 0.9375rem 0;
+    letter-spacing: 0.125rem;
+}
+
+.product-price {
+    font-size: 1rem;
+    color: rgb(94, 92, 92);
+}
+
+.product-description {
+    margin: 1.875rem 0;
+    font-size: 0.80rem;
+    letter-spacing: 0.1rem;
+    
+}
+
+/* Ensure action-section is styled to center content */
+.action-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem; /* Space between the button and help section */
+    margin-top: 1.5rem;
+}
+
+/* Styling for the add to cart button */
+.addtocart-button {
+    background-color: #242222;
+    color: #fff;
+    padding: 0.625rem 5rem;
+    border: none;
+    cursor: pointer;
+    font-size: 0.75rem;
+}
+
+/* Help section styling (already present in your code) */
+.help-section {
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    text-align: center;
+    font-size: 0.7rem;
+    color: #000000;
+    background-color: #f5f5f5;
+    max-width: 300px;
+    border-radius: 8px;
+    letter-spacing: .12rem;
+    
+}
+/* Horizontal Line */
+hr {
+    width: 100%;
+    max-width: 500px;
+    border: none;
+    border-top: 1px solid rgba(128, 128, 128, 0.5);
+    margin: 1.25rem auto;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 1024px) {
+    /* Tablet Adjustments */
+    .product-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .product-info {
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Mobile Adjustments */
+    .header {
+        padding: 1rem;
+    }
+    .brand a {
+        font-size: 1rem;
+    }
+    .nav-left, .nav-right {
+        gap: 1rem;
+    }
+    .product-container {
+        padding: 6rem 1rem;
+    }
+    .checkout-button {
+        width: 100%;
+        padding: 0.625rem;
+    }
+}
+
+/* Cart Panel Styling */
+.cart-panel {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Initially hidden off-screen */
+    width: 330px; /* Adjust width as needed */
+    height: 100%;
+    background-color: #ffffff;
+    box-shadow: -4px 0 8px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease;
+    z-index: 1001;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+/*This is a property of PLSP-CCST BSIT-3B SY 2024-2025 */
+
+/* Active state to slide the cart panel in */
+.cart-panel.active {
+    right: 0; /* Slide in from the right */
+}
+
+/* Cart Header */
+.cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 5;
+    margin-top: 20px;
+    font-family: 'Helvetica Neue Light', sans-serif;
+    font-size: .75rem;
+    margin-left: .75rem;
+    letter-spacing: 0.125rem;
+    
+}
+
+.cart-header h2 {
+    font-weight: normal;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    font-size: .75rem;
+    cursor: pointer;
+    color: #333;
+    margin-bottom: 0;
+}
+
+
+/* Cart Items */
+#cart-items {
+    flex-grow: 1;
+    padding: 0 20px;
+    overflow-y: auto;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.cart-item img {
+    width: 100px;
+    height: 100px;
+    margin-right: 15px;
+    
+   
+}
+
+.item-details {
+    flex-grow: 1;
+    letter-spacing: 0.125rem;
+    
+}
+
+.item-name {
+    font-size: 0.7rem;
+    color: #000000;
+}
+
+.item-price {
+    font-size: .80rem;
+    color: #666;
+    margin-top: 5px;
+}
+
+.item-quantity {
+    display: flex;
+    align-items: center;
+    border: 1px solid #e6e3e3;
+    overflow: hidden; /* Ensures no overflow from rounded corners */
+    width: 60px; /* Set a width for the box */
+    font-size: 8px;
+    margin-top: 10px;
+}
+
+.qty-btn {
+    background-color: #ffffff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 11px;
+    transition: background-color 0.3s;
+    
+}
+
+.remove-item {
+    color: #000000; /* Set the text color */
+    font-size: 0.7rem; /* Font size */
+    text-decoration: none; /* Initially no underline */
+    margin-left: 0px; /* Add space between quantity controls and remove button */
+    align-self: center; /* Center it vertically */
+    cursor: pointer; /* Change cursor to pointer for better user experience */
+    transition: text-decoration 0.3s ease; /* Smooth transition for underline effect */
+}
+
+/* Underline effect on hover */
+.remove-item:hover {
+    text-decoration: underline; /* Underline on hover */
+    color: #555; /* Change color on hover for better visibility */
+}
+
+/* Checkout Button Styling */
+#checkout-button {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    width: calc(100% - 40px); /* Adjust width to fit well within the cart */
+  }
+  
+  #checkout-button a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .checkout {
+    display: flex;
+    align-items: center; /* Align text and total inline */
+    text-decoration: none; /* Remove underline from the link */
+    color: white;
+  }
+  
+  #total {
+    margin-left: 5px; /* Adds space between the 'Checkout' text and the total */
+    font-weight: bold; /* Optional: make the total text bold */
+    color: white;
+  }
+  

@@ -1,0 +1,221 @@
+#header{
+    border-bottom: 1px solid black;
+    padding-bottom: 2px;
+    margin-bottom: 30px;
+ }
+.navbar-brand span {
+    font-weight: bold;
+    color: #5a4d41; /* Adjust the color to match the brand */
+    font-size: 40px;
+  }
+.cart-right{
+    background: #f5f5f5;
+}
+#product-view{
+    border: 1px solid black;
+    margin-left: 15vh;
+}
+#delivery{
+    margin-top: 5vh;
+}
+/*This is a property of PLSP-CCST BSIT-3B SY 2024-2025 */
+.checkout-button{
+    width: 35vh;
+    background:#1773B0;
+}
+.checkout{
+    display: flex;
+  justify-content: center;
+}
+#cart-items{
+  margin-top: 5vh;
+}
+/* Style for input boxes */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select {
+  width: 100%; 
+  padding: 10px; 
+  border: 1px solid #ced4da; /* Default border */
+  border-radius: 5px; 
+  font-size: 16px; 
+  transition: border-color 0.3s ease; 
+}
+
+/* Focus effect */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+select:focus {
+  border-color: #007bff; 
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
+}
+
+   /* Footer Adjustments */
+  /* General Styles */
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f8f9fa; /* Light background color */
+    border-top: 1px solid #dee2e6; /* Subtle border on top */
+  }
+  
+  .footer-left,
+  .footer-middle,
+  .footer-right {
+    flex: 1;
+    padding: 10px;
+    min-width: 250px; /* Minimum width for each section */
+  }
+  
+  h4 {
+    margin-bottom: 15px;
+    color: #343a40; /* Darker color for headings */
+  }
+  
+  p {
+    margin: 5px 0;
+    color: #6c757d; /* Medium gray for paragraph text */
+  }
+  
+  a {
+    color: #000; /* Bootstrap primary color */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 10px; /* Space between social icons */
+  }
+  footer{
+    margin-top: 40px;
+  }
+  /* Media Queries for Responsiveness */
+  @media (max-width: 1500px) {
+    .footer-container {
+        flex-direction: column; /* Stack sections vertically on mobile */
+        align-items: center; /* Center content */
+    }
+  
+    .footer-left,
+    .footer-middle,
+    .footer-right {
+        text-align: center; /* Center text for mobile */
+        margin-bottom: 20px; /* Space between sections */
+    }
+  
+    .social-icons {
+        justify-content: center; /* Center social icons */
+    }
+  }
+  
+  @media (min-width: 1500px) {
+    .footer-container {
+        flex-direction: row; /* Arrange sections in a row on desktop */
+    }
+  }
+
+  .cart-item img {
+    width: 150px;
+    height: 150px;
+    margin-right: 15px;
+}
+
+.total-container div{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    color:black;
+}
+.total{
+    margin-top: 5vh;
+}
+.cart-item {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+}
+
+.d-flex {
+  display: flex;
+  align-items: center; /* Aligns image and text horizontally */
+}
+.item-quantity {
+  margin-top: 10px; /* Adds space between item name and quantity controls */
+  margin-left: 20px;
+}
+#quantity {
+  font-size: 16px;    /* Adjust number size */  
+  margin-left: 370px;
+}
+.note{
+  border: 1px solid #f3f3f3;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px;
+  background-color: #f3f3f3;
+}
+
+/*AFTER CHECKOUT BUTTON*/
+ #checking {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  text-align: center;
+  border-radius: 6px;
+}
+
+#checking span {
+  display: block;
+  margin-bottom: 20px;
+}
+
+/* Centering buttons with flexbox */
+#checking .button-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Styling for both buttons */
+.confirm, .unconfirm {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: green; /* Standard button color */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+}
+.unconfirm{
+  background-color:rgba(128, 128, 128, 0.5);
+}
+/* Optional hover effect */
+.confirm:hover {
+  background-color: #4E9F3D; 
+}
+.unconfirm:hover {
+  background-color: rgba(128, 128, 128, 1);
+}
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}

@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+
+
+
+body {
+  font-size: 15px;
+}
+
+.dm-serif-display {
+  font-family: DM Serif Display;
+}
+
+.collapse {
+  transition: height 0.1s ease-in-out !important;
+}
+
+@media screen and (max-width: 576px) {
+  .offcanvas {
+    width: 75% !important;
+  }
+/*This is a property of PLSP-CCST BSIT-3B SY 2024-2025 */
+
+  .dropdown {
+    display: none !important;
+  }
+
+  .dropdown-mobile {
+    display: block !important;
+  }
+
+}
+
+.letter-spacing-1 {
+  letter-spacing: 1px;
+}
+
+.border-opacity-50 {
+  border: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+.border-opacity-75 {
+  border: 2px solid rgba(0, 0, 0, 0.75);
+}
+
+.offcanvas-body ul a {
+  display: block;
+  /* Makes the entire <a> area clickable */
+  color: #000;
+  /* Initial text color */
+  text-decoration: none;
+  padding: 0.5rem;
+  /* Adjust as needed for padding around text */
+  transition: background-color 0.3s ease, color 0.3s ease;
+  /* Smooth transition for background and text color */
+}
+
+.offcanvas-body ul a:hover {
+  background-color: #000 !important;
+  color: white !important;
+  /* Changes text color on hover */
+}
+
+.dropdown .btn {
+  background: transparent !important;
+}
+
