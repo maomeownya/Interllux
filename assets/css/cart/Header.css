@@ -1,0 +1,133 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .intro-text {
+    color: #333;
+  }
+  
+  /* Basic styling for the header */
+  .navbar {
+    background-color: #d2d0d0 !important;
+    padding: 1rem 2rem;
+  }
+  
+  /* Logo styling */
+  .navbar-brand img {
+    width: 30px;
+    height: 30px;
+   
+  }
+  
+  .navbar-brand span {
+    font-weight: bold;
+    color: #5a4d41; /* Adjust the color to match the brand */
+  }
+  
+  /* Link styling */
+  .navbar-nav .nav-link {
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    border-bottom: 2px solid transparent;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #ff0000; /* Change this to your desired hover color */
+    border-bottom: 2px solid #ff0000; /* Adds underline on hover */
+  }
+  
+  .d-flex a {
+    color: #5a4d41;
+    font-size: 1.2rem;
+    padding: 0 0.5rem;
+  }
+  
+  .d-flex a:hover {
+    color: #000;
+  }
+  
+  @media (max-width: 991px) {
+    .navbar-collapse {
+      transition: none; /* Remove transitions to prevent any movement */
+    }
+  }
+  
+  .categories {
+    background-color: #d2d0d0;
+  }
+  
+  .pagination {
+    justify-content: center;
+  }
+  
+  /* Footer Adjustments */
+  /* General Styles */
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f8f9fa; /* Light background color */
+    border-top: 1px solid #dee2e6; /* Subtle border on top */
+  }
+  
+  .footer-left,
+  .footer-middle,
+  .footer-right {
+    flex: 1;
+    padding: 10px;
+    min-width: 250px; /* Minimum width for each section */
+  }
+  
+  h4 {
+    margin-bottom: 15px;
+    color: #343a40; /* Darker color for headings */
+  }
+  
+  p {
+    margin: 5px 0;
+    color: #6c757d; /* Medium gray for paragraph text */
+  }
+  
+  a {
+    color: #000; /* Bootstrap primary color */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  a:hover {
+    text-decoration: none; /* Underline on hover */
+    color: #ff0000; /* Change this to your desired hover color */
+    border-bottom: 2px solid #ff0000; /* Adds underline on hover */
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 10px; /* Space between social icons */
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 1500px) {
+    .footer-container {
+        flex-direction: column; /* Stack sections vertically on mobile */
+        align-items: center; /* Center content */
+    }
+  
+    .footer-left,
+    .footer-middle,
+    .footer-right {
+        text-align: center; /* Center text for mobile */
+        margin-bottom: 20px; /* Space between sections */
+    }
+  
+    .social-icons {
+        justify-content: center; /* Center social icons */
+    }
+  }
+  
+  @media (min-width: 1500px) {
+    .footer-container {
+        flex-direction: row; /* Arrange sections in a row on desktop */
+    }
+  }
+
+/*This is a property of PLSP-CCST BSIT-3B SY 2024-2025 */

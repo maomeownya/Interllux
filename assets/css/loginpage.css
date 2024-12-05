@@ -1,0 +1,96 @@
+p {
+  color: #ffffff;
+}
+
+body {
+  background-image: url('../../assets/image/bag-hanging-from-furniture-item-indoors.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.form-signin {
+  height: 650px;
+  max-width: 400px;
+  padding: 15px;
+  place-self: center;
+}
+
+.form-signin .checkbox {
+  font-weight: 400;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: 10px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+form {
+  width: 100%;
+  padding: 20px;
+  /* Add some padding inside the form */
+  border-radius: 10px;
+  /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Slight shadow for a 3D effect */
+  border: 1px solid #ffffff3b;
+  background: rgba(0, 0, 0, 0.219) !important;
+  backdrop-filter: blur(30px) !important;
+}
+
+.form-signup {
+  display: none;
+}
+/*This is a property of PLSP-CCST BSIT-3B SY 2024-2025 */
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+input {
+  color: #ffffff !important;
+  border-radius: 0 !important;
+  border: 0 !important;
+  background: transparent !important;
+  border-bottom: 1px solid #ffffff4f !important;
+}
+
+input:focus+label.fill,
+input:valid+label.fill {
+  color: black !important;
+  background: transparent !important;
+  /* Ensure background stays transparent */
+}
+
+.form-floating label.fill {
+  background: transparent !important;
+  transition: color 0.2s ease; /* Smooth transition if color changes */
+}
+
+#admin-login {
+  background-image: url('../../assets/image/pexels-cottonbro-6651191.jpg');
+  background-size: cover;
+  background-position: center;
+}
